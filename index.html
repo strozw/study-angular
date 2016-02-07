@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body ng-app="myApp" ng-strict-di ng-controller="AppController as app">
-  <script src="./dist/app.js" charset="utf-8"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Flux • TodoMVC</title>
+    <link rel="stylesheet" href="todomvc-common/base.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <section
+      ng-app="myApp"
+      ng-controller="AppController as app"
+      id="todoapp"></section>
+    <footer id="info">
+      <p>Double-click to edit a todo</p>
+      <p>Created by <a href="http://facebook.com/bill.fisher.771">Bill Fisher</a></p>
+      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <script src="dist/app.js"></script>
+  </body>
 </html>

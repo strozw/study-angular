@@ -1,5 +1,6 @@
 
 import fetch from 'isomorphic-fetch';
+import FluxContainerController from './fluxContainerController';
 
 export default class AppController {
     constructor() {
