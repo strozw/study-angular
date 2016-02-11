@@ -1,10 +1,7 @@
 {
   "ecmaVersion": 6,
   "libs": [
-    "browser",
-    "jquery"
-  ],
-  "loadEagerly": [
+    "browser"
   ],
   "plugins": {
     "complete_strings": {},

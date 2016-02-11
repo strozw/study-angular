@@ -1,5 +1,8 @@
 import FluxStoreGroup from 'flux/lib/FluxStoreGroup';
 
+/**
+ * あああああああああああ
+ */
 export default class FluxContainerController {
 
   constructor($scope) {

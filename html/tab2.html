@@ -1,0 +1,13 @@
+<ons-page ng-controller="Tab2Controller as $ctrl">
+  <ons-toolbar>
+    <div class="center">Tab2</div>
+  </ons-toolbar>
+  
+  <ons-scroller>
+    <ons-list ons-lazy-repeat="$ctrl.lazyRepeatOption">
+      <ons-list-item>
+        <ons-col>{{ item.data.author }}</ons-col>
+      </ons-list-item>
+    </ons-list>
+  </ons-scroller>
+</ons-page>

@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Flux • TodoMVC</title>
-    <link rel="stylesheet" href="todomvc-common/base.css">
+    <link rel="stylesheet" href="bower_components/OnsenUI/css/onsenui.css">
+    <link rel="stylesheet" href="bower_components/OnsenUI/css/onsen-css-components.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/OnsenUI/js/onsenui_all.js"></script>
+    <script src="dist/bundle.js"></script>
   </head>
-  <body>
-    <section
-      ng-app="myApp"
+  <body ng-app="myApp"
       ng-controller="AppController as app"
-      id="todoapp"></section>
-    <footer id="info">
-      <p>Double-click to edit a todo</p>
-      <p>Created by <a href="http://facebook.com/bill.fisher.771">Bill Fisher</a></p>
-      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-    </footer>
-    <script src="dist/app.js"></script>
+      id="todoapp">
+      <ons-navigator var="mainNavi">
+        <ons-page style="text-align:center">
+    	     <ons-icon icon="ion-load-c" spin="true" style="position: absolute; top: 50%; left: 50%;"></ons-icon>
+    	  </ons-page>
+      </ons-navigator>
   </body>
 </html>

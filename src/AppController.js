@@ -1,13 +1,16 @@
-
-import fetch from 'isomorphic-fetch';
-import FluxContainerController from './fluxContainerController';
+import app from './app';
 
 export default class AppController {
-    constructor() {
-      fetch('http://localhost:3000/')
-      .then(function(response) {
-        console.log(response);
-        return response;
-      });
+    /**
+     * @param  {ngReduxProvider} $ngRedux [description]
+     * @param  {[type]} $scope   [description]
+     * @return {[type]}          [description]
+     * @ngInject
+     */
+    constructor($ngRedux, $scope) {
+      //$ngRedux.connect(this.mapToState);
     }
+
 }
+
+app.controller('AppController', AppController);

@@ -1,13 +1,10 @@
 /* global angular :true */
-import es6Promise from 'es6-promise';
-import 'angular';
-import 'angular-ui-router';
-import AppController from './AppController';
-
-es6Promise.polyfill();
+import uiRouter from 'angular-ui-router';
+import ngRedux from 'ng-redux';
+import ngReduxRouter from 'redux-ui-router';
 
 const app = angular.module(
-  'myApp', ['ui.router']
+  'myApp', ['onsen', uiRouter, ngRedux, ngReduxRouter]
 );
 
-app.controller('AppController', AppController);
+export default app;

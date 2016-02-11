@@ -2,13 +2,15 @@
 var gulp = require('gulp');
 var gulpWebpack = require('gulp-webpack');
 var browserSync = require('browser-sync');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+
 
 var APP_ENV = 'production';
 
 var config = {
   webpack: {
     entry: {
-      app: __dirname + '/src/app.js',
+      bundle: __dirname + '/src/index.js',
     },
     output: {
       path: __dirname + '/dist/',
@@ -27,6 +29,11 @@ var config = {
         }
       ]
     },
+    plugins: [
+      new ngAnnotatePlugin({
+        add: true
+      })
+    ],
     resolve: {
       extensions: ['', '.js']
     }

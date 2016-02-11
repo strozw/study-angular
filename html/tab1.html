@@ -1,0 +1,20 @@
+<ons-page ng-controller="Tab1Controller as $ctrl">
+  <ons-toolbar>
+    <div class="center">{{ $ctrl.name }}</div>
+  </ons-toolbar>
+
+  <ons-scroller>
+    <ons-list ons-lazy-repeat="$ctrl.lazyRepeatOption">
+      <ons-list-item ui-sref="detail({index: $index})" modifier="chevron" class="list-item-container">
+        <div class="list-item-left">
+          {{ $index }}
+        </div>
+        <div class="list-item-right">
+          <div class="list-item-content">
+            <div class="name">{{ item.data.author }}
+              <span class="lucent">{{ item.data.domain }}</span>
+        </div>
+      </ons-list-item>
+    </ons-list>
+  </ons-scroller>
+</ons-page>
